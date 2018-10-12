@@ -86,7 +86,7 @@ def all_holidays_with_bbq(holiday_hash)
   
   holiday_hash.collect do |key, val|
     val.collect do |holiday, items|
-      if items.include?("BBQ")
+      if items.include?("BBQ") && items != nil
         holiday
       end
     end
